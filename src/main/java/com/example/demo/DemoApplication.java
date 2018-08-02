@@ -17,7 +17,7 @@ public class DemoApplication {
 
 @RestController
 @RequestMapping(path = "/")
-class TestController {
+class HelloWorldController {
 
     @RequestMapping(value = "hello/{name}", method = RequestMethod.GET)
     public String hello(@PathVariable(value = "name") String name) {
